@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-12">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>SuperPower</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let hero of heroList$ | async">
+          <td>{{ hero.id }}</td>
+          <td>{{ hero.name }}</td>
+          <td>{{ hero.superPower }}</td>
+          <td>{{ hero.address }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
